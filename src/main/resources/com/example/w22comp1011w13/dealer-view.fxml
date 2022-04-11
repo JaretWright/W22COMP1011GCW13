@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w22comp1011w13.DealerViewController">
+   <children>
+      <BorderPane layoutX="235.0" layoutY="164.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label id="header" fx:id="dealerNameLabel" text="Jaret's Used Car" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Types Of Cars" />
+                  <ListView fx:id="typeOfCarListView" prefHeight="400.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Cars Matching Selection" />
+                  <ListView fx:id="carListView" prefHeight="400.0" prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets left="10.0" top="20.0" />
+               </padding>
+            </VBox>
+         </center>
+         <bottom>
+            <TextField fx:id="searchTextField" promptText="Search" BorderPane.alignment="CENTER" />
+         </bottom>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>
