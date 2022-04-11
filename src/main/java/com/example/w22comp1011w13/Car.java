@@ -40,6 +40,11 @@ public class Car {
 
     public String toString()
     {
-        return String.format("%d-%s %s $%.2f",id,make,model,price);
+        return String.format("%d-%s %s %s $%.2f",id,types,make,model,price);
+    }
+
+    public boolean isType(String typeToCheck)
+    {
+        return types.contains(typeToCheck);
     }
 }
